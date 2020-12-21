@@ -1,14 +1,14 @@
-# [Vue Argon Dashboard Pro Laravel](https://vue-argon-dashboard-pro-laravel.creative-tim.com/?ref=vadpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Argon%20Dashboard%20Pro%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-argon-dashboard-pro-laravel.creative-tim.com/%20%23%vue%20%23%argon%20%23design%20%23dashboard%20%23laravel%20%23pro%20via%20%40CreativeTim)
+# [Vue Paper Dashboard Pro Laravel](https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-vue-argon-dashboard-pro-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-argon-dashboard-pro-laravel/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-vue-argon-dashboard-pro-laravel/ct-vue-argon-dashboard-pro-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-argon-dashboard-pro-laravel/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-vue-paper-dashboard-pro-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-paper-dashboard-pro-laravel/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-vue-paper-dashboard-pro-laravel/ct-vue-paper-dashboard-pro-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-paper-dashboard-pro-laravel/issues?q=is%3Aissue+is%3Aclosed)
 
-_Frontend version_: Argon Dashboard v1.2.0. More info at https://www.creative-tim.com/product/argon-dashboard-pro
+_Frontend version_: Paper Dashboard v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard-2-pro
 
-_Vue version_: Vue Argon Dashboard v1.2.2. More info at https://www.creative-tim.com/product/vue-argon-dashboard-pro
+_Vue version_: Vue Paper Dashboard v2.3.0. More info at https://www.creative-tim.com/product/vue-paper-dashboard-2-pro
 
-![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/intro.gif)
+![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/intro.gif)
 
-What if you could go from frontend to fullstack in an instant when building your app? We partnered with [UPDIVISION](https://updivision.com) to bring you Vue Argon Dashboard PRO Laravel , the ultimate fullstack resource. Vue Argon Dashboard PRO Laravel comes not only with a huge number of UI components and a Vue Argon frontend, but also with an API-powered Laravel backend.
+What if you could go from frontend to fullstack in an instant when building your app? We partnered with [UPDIVISION](https://updivision.com) to bring you Vue Paper Dashboard PRO, the ultimate fullstack resource. Vue Paper Dashboard PRO comes not only with a huge number of UI components and a Vue Paper frontend, but also with an API-powered Laravel backend.
 
 # Download
 
@@ -54,13 +54,13 @@ Install VueCLI: https://cli.vuejs.org/guide/installation.html
 7. Install Laravel Passport: `php artisan passport:install`
 8. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
 
-## Vue Argon Dashboard Project Installation
+## Vue Paper Dashboard Project Installation
 
-1. Navigate to your Vue Argon Dashboard project folder: `cd your-vue-argon-dashbord-project`
+1. Navigate to your Vue Paper Dashboard project folder: `cd your-vue-paper-dashbord-project`
 2. Install project dependencies: `npm install`
 3. Create a new .env file: `cp .env.example .env`
-4. `APP_BASE_URL` should contain the URL of your Vue Argon Dashboard Project (eg. http://localhost:8080/)
-5. `API_BASE_URL` should contain the URL of your Laravel JSON:API Project. (eg. http://localhost:3000/api/v1)
+4. `VUE_APP_BASE_URL` should contain the URL of your Vue Paper Dashboard Project (eg. http://localhost:8080/)
+5. `VUE_API_BASE_URL` should contain the URL of your Laravel JSON:API Project. (eg. http://localhost:3000/api/v1)
 6. Run `npm run dev` to start the application in a local development environment or `npm run build` to build release distributables.
 
 ## Usage
@@ -87,85 +87,45 @@ You can access the dashboard either by using the "**Dashboards/Dashboard**" link
 
 The login functionality is fully implemented in our theme helping you to start your project in no time. To login into dashboard you just have to add **/login** in the URL and fill the login form with one of the credentials (user: **admin@jsonapi.com**, **creator@jsonapi.com**, **member@jsonapi.com** and password: **secret**).
 
-The `src\views\Pages\Login.vue` is the Vue component which handles the login functinality. You can easily adapt it to your needs.
+The `src\components\Dashboard\Views\Pages\Login.vue` is the Vue component which handles the login functinality. You can easily adapt it to your needs.
 
 It uses the auth store located in `src\store\modules\auth.js`.
 
 ### Login Card
 
 ```
-<div class="container mt--8 pb-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-5 col-md-7">
-      <div class="card bg-secondary border-0 mb-0">
-        <div class="card-header bg-transparent pb-5">
-          <div class="text-muted text-center mt-2 mb-3">
-            <small>Sign in with</small>
+<div class="container">
+  <div class="header-body text-center" style="margin-bottom: 15px;">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <h1 class="text-white">Log in to Vue Paper Dashboard Laravel PRO Live Preview</h1>
+            <p class="text-lead text-white">Log in to see how you can save more than 300 hours of work with an
+            integrated Laravel API backend and ready-made CRUDs for managing:
+            #users, #roles, #items, #categories, #tags.</p>
           </div>
-          <div class="btn-wrapper text-center">
-            <a href="#" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon"
-                ><img src="/img/icons/common/github.svg"
-              /></span>
-              <span class="btn-inner--text">Github</span>
-            </a>
-            <a href="#" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon"
-                ><img src="/img/icons/common/google.svg"
-              /></span>
-              <span class="btn-inner--text">Google</span>
-            </a>
-          </div>
-        </div>
-        <div class="card-body px-lg-5 py-lg-5">
-          <div class="text-center text-muted mb-4">
-            <small>Or sign in with credentials</small>
-          </div>
-          <form role="form" @submit.prevent="handleSubmit()">
-            <base-input
-              alternative
-              class="mb-3"
-              name="Email"
-              prepend-icon="ni ni-email-83"
-              placeholder="Email"
-              v-model="email"
-            />
-            <validation-error :errors="apiValidationErrors.email" />
 
-            <base-input
-              alternative
-              class="mb-3"
-              name="Password"
-              :rules="{ required: true, min: 6 }"
-              prepend-icon="ni ni-lock-circle-open"
-              type="password"
-              placeholder="Password"
-              v-model="password"
-            >
-            </base-input>
-            <validation-error :errors="apiValidationErrors.password" />
+          <div class="text-white">
+            <h3 class="text-white"><strong>You can log in with 3 user types:</strong></h3>
+            <div>Username <b>admin@jsonapi.com</b> Password <b>secret</b></div>
+            <div>Username <b>creator@jsonapi.com</b> Password <b>secret</b></div>
+            <div>Username <b>member@jsonapi.com</b> Password <b>secret</b></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <form @submit.prevent="login">
+      <card type="login">
+        <h3 slot="header" class="header text-center">Login</h3>
 
-            <div class="text-center">
-              <base-button type="primary" native-type="submit" class="my-4"
-                >Sign in</base-button
-              >
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-6">
-          <router-link to="/password/reset" class="text-light"
-            ><small>Forgot password?</small></router-link
-          >
-        </div>
-        <div class="col-6 text-right">
-          <router-link to="/register" class="text-light"
-            ><small>Create new account</small></router-link
-          >
-        </div>
-      </div>
-    </div>
+        <fg-input v-model="email" addon-left-icon="nc-icon nc-single-02" placeholder="Email"/>
+        <validation-error :errors="apiValidationErrors.email" />
+        <fg-input v-model="password" addon-left-icon="nc-icon nc-key-25" placeholder="Password" type="password"/>
+        <validation-error :errors="apiValidationErrors.password" />
+        <br>
+
+        <p-button native-type="submit" slot="footer" type="warning" round block class="mb-3">Get started</p-button>
+      </card>
+    </form>
   </div>
 </div>
 ```
@@ -174,217 +134,178 @@ It uses the auth store located in `src\store\modules\auth.js`.
 
 The register functionality is fully implemented in our theme helping you to start your project in no time. To register a new user you just have to add **/register** in the URL or click on register link from login page and fill the register form with user details.
 
-The `src\views\pages\Register.vue` is the Vue component which handles the login functinality. You can easily extend it to your needs.
+The `src\components\Dashboard\Views\Pages\Register.vue` is the Vue component which handles the login functinality. You can easily extend it to your needs.
 
 It uses the auth store located in `src\store\modules\auth.js`.
 
 #### Register card
 
 ```
-<div class="container mt--8 pb-5">
-  <!-- Table -->
-  <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8">
-      <div class="card bg-secondary border-0">
-        <div class="card-header bg-transparent pb-5">
-          <div class="text-muted text-center mt-2 mb-4">
-            <small>Sign up with</small>
-          </div>
-          <div class="text-center">
-            <a href="#" class="btn btn-neutral btn-icon mr-4">
-              <span class="btn-inner--icon"
-                ><img src="/img/icons/common/github.svg"
-              /></span>
-              <span class="btn-inner--text">Github</span>
-            </a>
-            <a href="#" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon"
-                ><img src="/img/icons/common/google.svg"
-              /></span>
-              <span class="btn-inner--text">Google</span>
-            </a>
-          </div>
-        </div>
-        <div class="card-body px-lg-5 py-lg-5">
-          <div class="text-center text-muted mb-4">
-            <small>Or sign up with credentials</small>
-          </div>
-          <form role="form" @submit.prevent="handleSubmit()">
-            <base-input
-              alternative
-              class="mb-3"
-              prepend-icon="ni ni-hat-3"
-              placeholder="Name"
-              name="Name"
-              v-model="name"
-            >
-            </base-input>
-            <validation-error :errors="apiValidationErrors.name" />
-
-            <base-input
-              alternative
-              class="mb-3"
-              prepend-icon="ni ni-email-83"
-              placeholder="Email"
-              name="Email"
-              v-model="email"
-            >
-            </base-input>
-            <validation-error :errors="apiValidationErrors.email" />
-
-            <base-input
-              alternative
-              class="mb-3"
-              prepend-icon="ni ni-lock-circle-open"
-              placeholder="Password"
-              type="password"
-              name="Password"
-              v-model="password"
-            >
-            </base-input>
-            <password
-              class="mb-3"
-              v-model="password"
-              :strength-meter-only="true"
-              @score="showScore"
-              :showStrengthMeter="false"
-            />
-
-            <validation-error :errors="apiValidationErrors.password" />
-
-            <base-input
-              alternative
-              class="mb-3"
-              prepend-icon="ni ni-lock-circle-open"
-              placeholder="Confirm Password"
-              type="password"
-              name="Password confirmation"
-              v-model="password_confirmation"
-            >
-            </base-input>
-            <validation-error
-              :errors="apiValidationErrors.password_confirmation"
-            />
-
-            <div class="text-muted font-italic">
-              <small
-                >password strength:
-                <template v-if="scors === 0">
-                  <span class="text-danger font-weight-700">
-                    very weak
-                  </span>
-                </template>
-
-                <template v-if="scors === 1">
-                  <span class="text-danger font-weight-700"> weak </span>
-                </template>
-
-                <template v-if="scors === 2">
-                  <span class="text-warning font-weight-700"> medium </span>
-                </template>
-
-                <template v-if="scors === 3">
-                  <span class="text-success font-weight-700"> strong </span>
-                </template>
-
-                <template v-if="scors === 4">
-                  <span class="text-success font-weight-700">
-                    very strong
-                  </span>
-                </template>
-              </small>
-
-            </div>
-            <div class="row my-4">
-              <div class="col-12">
-                <base-input
-                  :rules="{ required: { allowFalse: false } }"
-                  name="Privacy"
-                  Policy
-                >
-                  <base-checkbox v-model="boolean">
-                    <span class="text-muted"
-                      >I agree with the
-                      <a href="#!">Terms and conditions</a></span
-                    >
-                  </base-checkbox>
-                </base-input>
-              </div>
-            </div>
-            <div class="text-center">
-              <base-button type="primary" native-type="submit" class="my-4"
-                >Create account</base-button
-              >
-            </div>
-          </form>
-        </div>
+<form @submit.prevent="register">
+  <card type="signup" class="text-center">
+    <template slot="header">
+      <h4 class="card-title">Register</h4>
+      <div class="social">
+        <button class="btn btn-icon btn-round btn-twitter">
+          <i class="fa fa-twitter"></i>
+        </button>
+        <button class="btn btn-icon btn-round btn-dribbble">
+          <i class="fa fa-dribbble"></i>
+        </button>
+        <button class="btn btn-icon btn-round btn-facebook">
+          <i class="fa fa-facebook-f"></i>
+        </button>
+        <p class="card-description"> or be classical </p>
       </div>
-    </div>
-  </div>
-</div>
+    </template>
+
+    <fg-input v-model="name" addon-left-icon="nc-icon nc-single-02" placeholder="Name"/>
+    <validation-error :errors="apiValidationErrors.name"/>
+    <fg-input v-model="email" addon-left-icon="nc-icon nc-email-85" placeholder="Email"/>
+    <validation-error :errors="apiValidationErrors.email"/>
+    <fg-input v-model="password" addon-left-icon="nc-icon nc-key-25" placeholder="Password" type="password"/>
+    <validation-error :errors="apiValidationErrors.password"/>
+    <fg-input v-model="password_confirmation" addon-left-icon="nc-icon nc-key-25" placeholder="Password confirmation" type="password"/>
+    <validation-error :errors="apiValidationErrors.password_confirmation"/>
+    <p-checkbox class="text-left" v-model="boolean">
+      I agree to the
+      <a href="#something">terms and conditions</a>.
+    </p-checkbox>
+
+    <p-button native-type="submit" slot="footer" type="info" round>Get Started</p-button>
+  </card>
+</form>
 ```
 
 ### Profile edit
 
 You have the option to edit the current logged in user's profile information (name, email, profile picture) and password. To access this page, just click the "**Examples/Profile**" link in the left sidebar or add **/examples/user-profile** in the URL.
 
-The `src\views\Examples\UserProfile` is the folder with Vue components that handle the update of the user information and password.
+The `src\components\Dashboard\Views\Examples\UserProfile` is the folder with Vue components that handle the update of the user information and password.
 
 #### Edit profile component
 
 ```
 <template>
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-xl-6 order-xl-1" >
-                <div>
-                    <user-edit-card :user="user"/>
-                </div>
-                <div class="mt-5">
-                    <user-password-card :user="user"/>
-                </div>
-            </div>
-            <div class="col-xl-6 order-xl-2">
-                <user-card />
-            </div>
-        </div>
+  <div class="card">
+    <div class="card-header">
+      <h4 class="title">Edit Profile</h4>
     </div>
+    <div class="card-body">
+      <form ref="profile_form" @submit.prevent="updateProfile">
+         <div class="form-group">
+          <label class="form-control-label"> Profile Photo </label>
+          <div
+            v-if="image"
+            class="profile-image card-img pb-4"
+            :style="{
+              'background-image': `url('${image}')`,
+            }"
+          ></div>
+          <div v-else class="profile-image">
+            <img src="/img/placeholder.jpg" />
+          </div>
+          <div class="image-upload">
+            <button
+              v-if="image"
+              type="button"
+              class="btn btn-fill btn-wd btn-danger"
+              @click="removeImage"
+            >
+              <span>
+                <i class="fa fa-times" />
+                Remove
+              </span>
+            </button>
+            <button type="button" class="btn btn-info btn-fill btn-wd">
+              <label v-if="!image" for="imageInput" class="mb-0">Select image</label>
+              <label v-else for="imageInput" class="mb-0">Change</label>
+              <input
+                id="imageInput"
+                ref="imageInput"
+                accept="image/*"
+                type="file"
+                style="display: none"
+                @input="onSelectFile"
+              />
+            </button>
+          </div>
+        </div>
+        <validation-error :errors="apiValidationErrors.attachment" />
+        <fg-input v-model="user.name" placeholder="Name" label="Name"></fg-input>
+        <validation-error :errors="apiValidationErrors.name" />
+        <fg-input v-model="user.email" placeholder="Enter email" label="Email address"></fg-input>
+        <validation-error :errors="apiValidationErrors.email" />
+        <div class="text-center">
+          <button native-type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="updateProfile">
+            Update Profile
+          </button>
+        </div>
+        <div class="clearfix"></div>
+      </form>
+    </div>
+  </div>
 </template>
 <script>
-import UserEditCard from '@/views/Examples/UserProfile/UserEditCard.vue'
-import UserPasswordCard from '@/views/Examples/UserProfile/UserPasswordCard.vue'
-import UserCard from '@/views/Pages/UserProfile/UserCard.vue'
-
-export default {
-    layout: 'DashboardLayout',
-
+import formMixin from "@/mixins/form-mixin";
+import ValidationError from "src/components/UIComponents/ValidationError.vue";
+  export default {
+    mixins: [formMixin],
     components: {
-        UserEditCard,
-        UserPasswordCard,
-        UserCard
+      ValidationError
+    },
+    props: {
+      user: Object
     },
 
     data() {
-        return {
-            user: {
-                type: 'profile',
-                name: null,
-                email: null,
-                profile_image: null,
-            }
-        }
+      return {
+        image: null,
+      };
     },
-     created() {
-      this.getProfile();
-    },
-
     methods: {
-      async getProfile() {
-        await this.$store.dispatch("profile/me")
-        this.user = await {...this.$store.getters["profile/me"]}
+      async onSelectFile(e) {
+        const input = this.$refs.imageInput;
+        const files = input.files;
+
+        if (files && files[0]) {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            this.image = e.target.result;
+          };
+          reader.readAsDataURL(files[0]);
+        }
+      },
+      removeImage() {
+        this.image = null;
+      },
+      async updateProfile () {
+         try {
+          if (this.image) {
+            await this.$store.dispatch("users/upload", {user: this.user, image: this.$refs.imageInput.files[0]})
+            this.user.profile_image = await this.$store.getters["users/url"]
+          }
+
+          await this.$store.dispatch("profile/update", this.user)
+          this.removeImage();
+          this.resetApiValidation();
+          this.$notify({
+            type: 'success',
+            message: 'Profile updated successfully.',
+            icon: 'nc-icon nc-bell-55',
+          })
+          await this.$store.getters["profile/me"]
+        } catch (e) {
+          this.$notify({
+            type: 'danger',
+            message: 'Oops, something went wrong!',
+            icon: 'nc-icon nc-bell-55',
+          })
+          this.setApiValidation(e.response.data.errors)
+        }
       }
     }
-}
+  }
 </script>
 ```
 
@@ -394,103 +315,71 @@ export default {
 <template>
   <div class="card">
     <div class="card-header">
-      <h1>Change Password</h1>
+      <h4 class="title">Edit Password</h4>
     </div>
     <div class="card-body">
-      <form ref="password_form" @submit.prevent="handleChangePassword">
-        <base-input
-          v-model="password"
-          type="password"
-          name="new_password"
-          autocomplete="on"
-          class="mb-3"
-          prepend-icon="fa fa-key"
-          placeholder="New Password"
-        />
+      <form ref="password_form" @submit.prevent="changePassword">
+        <fg-input v-model="password" placeholder="Password" label="Password" type="password"></fg-input>
         <validation-error :errors="apiValidationErrors.password" />
-
-        <base-input
-          v-model="password_confirmation"
-          type="password"
-          name="confirm_password"
-          autocomplete="on"
-          class="mb-3"
-          prepend-icon="fa fa-key"
-          placeholder="Confirm Password"
-        />
+        <fg-input v-model="password_confirmation" placeholder="Confirm password" label="Confirm password" type="password"></fg-input>
         <validation-error :errors="apiValidationErrors.password_confirmation" />
-        <div class="my-4">
-          <base-button
-            type="button"
-            class="btn btn-sm btn-primary"
-            native-type="submit"
-          >
-            Change Password
-          </base-button>
+        <div class="text-center">
+          <button native-type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="changePassword">
+            Update Password
+          </button>
         </div>
+        <div class="clearfix"></div>
       </form>
     </div>
   </div>
 </template>
 <script>
-import BaseInput from "@/components/Inputs/BaseInput.vue";
-import BaseButton from "@/components/BaseButton.vue";
 import formMixin from "@/mixins/form-mixin";
-import ValidationError from "@/components/ValidationError.vue";
+import ValidationError from "src/components/UIComponents/ValidationError.vue";
+  export default {
+    mixins: [formMixin],
+    components: {
+      ValidationError
+    },
+    props: {
+      user: Object
+    },
 
-export default {
-  name: "UserPasswordCard",
-
-  components: {
-    BaseInput,
-    BaseButton,
-    ValidationError,
-  },
-
-  mixins: [formMixin],
-
-  props: {
-    user: Object,
-  },
-
-  data() {
-    return {
+    data: () => ({
       password: null,
       password_confirmation: null,
-    };
-  },
-
-  methods: {
-    async handleChangePassword() {
-      if (["1", "2", "3"].includes(this.user.id)) {
-        this.$notify({
-          type: "danger",
-          message: "You are not allowed not change data of default users."
-        });
-        return;
+    }),
+    methods: {
+      async changePassword () {
+        
+        const user = {
+          id: this.user.id,
+          type: "users",
+          password: this.password,
+          password_confirmation: this.password_confirmation
+        }
+         try {
+          this.resetApiValidation();
+          await this.$store.dispatch("users/update", user)
+          this.user = await this.$store.getters["profile/me"];
+          this.$refs["password_form"].reset();
+          
+          this.$notify({
+            type: 'success',
+            message: 'Profile updated successfully.',
+            icon: 'nc-icon nc-bell-55',
+          })
+        } catch (e) {
+          this.$notify({
+            type: 'danger',
+            message: 'Oops, something went wrong!',
+            icon: 'nc-icon nc-bell-55',
+          })
+          this.setApiValidation(e.response.data.errors)
+        }
       }
-      this.user.password = this.password;
-      this.user.password_confirmation = this.password_confirmation;
-
-      try {
-        await this.$store.dispatch("users/update", this.user);
-        this.$refs["password_form"].reset();
-        this.resetApiValidation();
-
-        this.$notify({
-          type: "success",
-          message: "Password changed successfully.",
-        });
-      } catch (error) {
-        this.$notify({
-          type: "danger",
-          message: "Oops, something went wrong!",
-        });
-        this.setApiValidation(error.response.data.errors);
-      }
-    },
-  },
-};
+    }
+  }
 </script>
 ```
 
@@ -501,108 +390,77 @@ To add a new role, click the "**Add role**" button. To edit an existing role, cl
 
 The store used for role functionality is found in `src\store\modules\roles-module.vue`
 
-You can find the compoments for role functionality in `src\views\Examples\RoleManagement` folder.
+You can find the compoments for role functionality in `src\components\Dashboard\Views\Examples\RoleManagement` folder.
 
 #### List page
 
 ```
-<div>
-  <div
-    class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
-  >
+<div class="card-body row">
+  <div class="col-sm-6">
     <el-select
-      class="select-primary pagination-select"
+      class="select-default"
       v-model="pagination.perPage"
-      placeholder="Per page"
-    >
+      placeholder="Per page">
       <el-option
-        class="select-primary"
+        class="select-default"
         v-for="item in pagination.perPageOptions"
         :key="item"
         :label="item"
-        :value="item"
-      >
+        :value="item">
       </el-option>
     </el-select>
-
-    <div>
-      <base-input
+  </div>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <fg-input class="input-sm"
+        placeholder="Search"
         v-model="query"
-        type="search"
-        prepend-icon="fas fa-search"
-        placeholder="Search..."
-        clearable
-      />
+        addon-right-icon="nc-icon nc-zoom-split">
+      </fg-input>
     </div>
   </div>
-  <el-table
-    class="table-responsive align-items-center table-flush"
-    header-row-class-name="thead-light"
-    :data="roles"
-    @sort-change="sortChange"
-  >
-    <div slot="empty" v-if="loading">
-      <img src="/img/loading.gif" style="height: 100px; width: 100px" />
-    </div>
-    <el-table-column label="Name" prop="name" sortable="custom" />
-    <el-table-column
-      label="Created At"
-      prop="created_at"
-      sortable="custom"
-    />
-    <el-table-column align="center">
-      <div slot-scope="{ row }" class="table-actions">
-        <el-tooltip content="Edit" placement="top">
-          <a
-            type="text"
-            @click="editRole(row)"
-            class="table-action"
-            data-toggle="tooltip"
-            style="cursor: pointer"
-          >
-            <i class="fas fa-user-edit" />
-          </a>
-        </el-tooltip>
-
-        <el-tooltip content="Delete" placement="top">
-          <a
-            type="text"
-            @click="deleteRole(row.id)"
-            class="table-action table-action-delete"
-            data-toggle="tooltip"
-            style="cursor: pointer"
-          >
-            <i class="fas fa-trash" />
-          </a>
-        </el-tooltip>
-      </div>
-    </el-table-column>
-  </el-table>
+  <div class="col-sm-12 mt-2">
+    <el-table class="table-striped" :data="table" border @sort-change="sortChange">
+      <el-table-column label="Name" prop="name" sortable="custom" />
+      <el-table-column label="Created At" prop="created_at" sortable="custom"/>
+      <el-table-column fixed="right" class-name="td-actions" label="Actions">
+        <template slot-scope="props">
+          <p-button type="success" size="sm" icon @click="goToEdit(props.row.id)">
+            <i class="fa fa-edit"></i>
+          </p-button>
+          <p-button type="danger" size="sm" icon @click="destroy(props.row.id)">
+            <i class="fa fa-times"></i>
+          </p-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <div class="col-sm-6 pagination-info">
+    <p class="category">Showing {{from + 1}} to {{to}} of {{total}} entries</p>
+  </div>
+  <div class="col-sm-6">
+    <p-pagination class="pull-right"
+        v-model="pagination.currentPage"
+        :per-page="pagination.perPage"
+        :total="total">
+    </p-pagination>
+  </div>
 </div>
 ```
 
 #### Add/edit role
 
 ```
-<div class="card-body">
-  <form ref="profile_form" @submit.prevent="handleSubmit">
-    <base-input
-      label="Name"
-      prepend-icon="fas fa-user"
-      v-model="role.name"
-    />
-    <validation-error :errors="apiValidationErrors.name" />
-    <div class="my-4">
-      <base-button
-        type="button"
-        class="btn btn-sm btn-primary"
-        native-type="submit"
-      >
-        Update Role
-      </base-button>
-    </div>
-  </form>
-</div>
+<form @submit.prevent>
+  <fg-input v-model="role.name" placeholder="Name" label="Name" ></fg-input>
+  <validation-error :errors="apiValidationErrors.name" />
+  <div class="text-center">
+    <button native-type="submit" class="btn btn-info btn-fill btn-wd">
+      Submit
+    </button>
+  </div>
+  <div class="clearfix"></div>
+</form>
 ```
 
 ### User management
@@ -612,86 +470,73 @@ The first thing you will see is a list of existing users. You can add new ones b
 
 The store used for role functionality is found in `src\store\modules\users-module.vue`
 
-You can find the compoments for role functionality in `src\views\Examples\UserManagement` folder.
+You can find the compoments for role functionality in `src\components\Dashboard\Views\Examples\UserManagement` folder.
 
 Once you add more users, the list will grow and for every user you will have edit and delete options (access these options by clicking the three dotted menu that appears at the end of every row).
 
 ```
-<el-table
-  class="table-responsive align-items-center table-flush"
-  header-row-class-name="thead-light"
-  :data="users"
-  @sort-change="sortChange"
->
-  <div slot="empty" v-if="loading">
-    <img src="/img/loading.gif" style="height: 100px; width: 100px" />
+<div class="card-body row">
+  <div class="col-sm-6">
+    <el-select
+      class="select-default"
+      v-model="pagination.perPage"
+      placeholder="Per page">
+      <el-option
+        class="select-default"
+        v-for="item in pagination.perPageOptions"
+        :key="item"
+        :label="item"
+        :value="item">
+      </el-option>
+    </el-select>
   </div>
-  <el-table-column label="Author" min-width="50px">
-    <template v-slot="{ row }">
-      <img
-        v-if="row.profile_image"
-        :src="row.profile_image"
-        class="avatar rounded-circle mr-3"
-      />
-    </template>
-  </el-table-column>
-
-  <el-table-column
-    label="Name"
-    min-width="60px"
-    prop="name"
-    sortable="custom"
-  />
-  <el-table-column
-    label="Email"
-    min-width="90px"
-    prop="email"
-    sortable="custom"
-  />
-  <el-table-column
-    label="Role"
-    min-width="60px"
-    prop="roles.name"
-    sortable="custom"
-  >
-    <template v-slot="{ row }">
-      <span>{{ row.roles[0].name }}</span>
-    </template>
-  </el-table-column>
-  <el-table-column
-    label="Created At"
-    prop="created_at"
-    min-width="100px"
-    sortable="custom"
-  />
-  <el-table-column min-width="50px" align="center">
-    <div slot-scope="{ row }" class="table-actions">
-      <el-tooltip content="Edit" placement="top">
-        <a
-          type="text"
-          @click="editUser(row)"
-          class="table-action"
-          data-toggle="tooltip"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-user-edit"></i>
-        </a>
-      </el-tooltip>
-
-      <el-tooltip content="Delete" placement="top">
-        <a
-          type="text"
-          @click="deleteUser(row.id)"
-          class="table-action table-action-delete"
-          data-toggle="tooltip"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-trash"></i>
-        </a>
-      </el-tooltip>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <fg-input class="input-sm"
+        placeholder="Search"
+        v-model="query"
+        addon-right-icon="nc-icon nc-zoom-split">
+      </fg-input>
     </div>
-  </el-table-column>
-</el-table>
+  </div>
+  <div class="col-sm-12 mt-2">
+    <el-table class="table-striped" :data="table" border @sort-change="sortChange">
+      <el-table-column label="Author">
+          <template v-slot="{ row }">
+              <img v-if="row.profile_image" :src="row.profile_image" class="avatar rounded-circle"/>
+          </template>
+      </el-table-column>
+      <el-table-column label="Name" prop="name" sortable="custom" />
+      <el-table-column label="Email" prop="email" sortable="custom" />
+      <el-table-column label="Role" prop="roles.name" sortable="custom">
+        <template v-slot="{ row }">
+          <span>{{ row.roles[0].name }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="Created At" prop="created_at" sortable="custom"/>
+      <el-table-column fixed="right" class-name="td-actions" label="Actions">
+        <template slot-scope="props">
+          <p-button type="success" size="sm" icon @click="goToEdit(props.row.id)">
+            <i class="fa fa-edit"></i>
+          </p-button>
+          <p-button type="danger" size="sm" icon @click="destroy(props.row.id)">
+            <i class="fa fa-times"></i>
+          </p-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <div class="col-sm-6 pagination-info">
+    <p class="category">Showing {{from + 1}} to {{to}} of {{total}} entries</p>
+  </div>
+  <div class="col-sm-6">
+    <p-pagination class="pull-right"
+      v-model="pagination.currentPage"
+      :per-page="pagination.perPage"
+      :total="total">
+    </p-pagination>
+  </div>
+</div>
 ```
 
 ### Tag management
@@ -701,92 +546,68 @@ You can add and edit tags here, but you can only delete them if they are not att
 
 The store used for role functionality is found in `src\store\modules\tags-module.vue`
 
-You can find the compoments for role functionality in `src\views\TagManagement` folder.
+You can find the compoments for role functionality in `src\components\Dashboard\Views\Examples\TagManagement` folder.
 
 ```
-<div>
-  <div
-    class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
-  >
+<div class="card-body row">
+  <div class="col-sm-6">
     <el-select
-      class="select-primary pagination-select"
+      class="select-default"
       v-model="pagination.perPage"
-      placeholder="Per page"
-    >
+      placeholder="Per page">
       <el-option
-        class="select-primary"
+        class="select-default"
         v-for="item in pagination.perPageOptions"
         :key="item"
         :label="item"
-        :value="item"
-      >
+        :value="item">
       </el-option>
     </el-select>
-
-    <div>
-      <form>
-        <base-input
-          v-model="query"
-          type="search"
-          prepend-icon="fas fa-search"
-          placeholder="Search..."
-          clearable
-        />
-      </form>
+  </div>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <fg-input class="input-sm"
+        placeholder="Search"
+        v-model="query"
+        addon-right-icon="nc-icon nc-zoom-split">
+      </fg-input>
     </div>
   </div>
-  <el-table
-    class="table-responsive align-items-center table-flush"
-    header-row-class-name="thead-light"
-    :data="tags"
-    @sort-change="sortChange"
-  >
-    <div slot="empty" v-if="loading">
-      <img src="/img/loading.gif" style="height: 100px; width: 100px" />
-    </div>
-    <el-table-column label="Name" prop="name" sortable="custom" />
-    <el-table-column label="Color" prop="color" sortable="custom">
-      <template slot-scope="{ row }">
-        <span
-          class="badge badge-default"
-          :style="{ backgroundColor: row.color }"
-          >{{ row.name }}</span
-        >
-      </template>
-    </el-table-column>
-    <el-table-column
-      label="Created At"
-      prop="created_at"
-      sortable="custom"
-    />
-    <el-table-column align="center">
-      <div slot-scope="{ row }" class="table-actions">
-        <el-tooltip content="Edit" placement="top">
-          <a
-            type="text"
-            @click="editTag(row)"
-            class="table-action"
-            data-toggle="tooltip"
-            style="cursor: pointer"
+  <div class="col-sm-12 mt-2">
+    <el-table class="table-striped" :data="tags" border @sort-change="sortChange">
+      <el-table-column label="Name" prop="name" sortable="custom" />
+      <el-table-column label="Color" prop="color" sortable="custom">
+        <template slot-scope="{ row }">
+          <span
+            class="badge badge-default"
+            :style="{ backgroundColor: row.color }"
+            >{{ row.name }}</span
           >
-            <i class="fas fa-user-edit"></i>
-          </a>
-        </el-tooltip>
-
-        <el-tooltip content="Delete" placement="top">
-          <a
-            type="text"
-            @click="deleteTag(row.id)"
-            class="table-action table-action-delete"
-            data-toggle="tooltip"
-            style="cursor: pointer"
-          >
-            <i class="fas fa-trash"></i>
-          </a>
-        </el-tooltip>
-      </div>
-    </el-table-column>
-  </el-table>
+        </template>
+      </el-table-column>
+      <el-table-column label="Created At" prop="created_at" sortable="custom"/>
+      <el-table-column fixed="right" class-name="td-actions" label="Actions">
+        <template slot-scope="props">
+          <p-button type="success" size="sm" icon @click="goToEdit(props.row.id)">
+            <i class="fa fa-edit"></i>
+          </p-button>
+          <p-button type="danger" size="sm" icon @click="deleteTag(props.row.id)">
+            <i class="fa fa-times"></i>
+          </p-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <div class="col-sm-6 pagination-info">
+    <p class="category">Showing {{from + 1}} to {{to}} of {{total}} entries</p>
+  </div>
+  <div class="col-sm-6">
+    <p-pagination class="pull-right"
+      v-model="pagination.currentPage"
+      :per-page="pagination.perPage"
+      :total="total">
+    </p-pagination>
+  </div>
 </div>
 ```
 
@@ -797,75 +618,60 @@ You can add and edit categories here, but you can only delete them if they are n
 
 The store used for category functionality is found in `src\store\modules\categories-module.vue`
 
-You can find the compoments for category functionality in `src\views\Examples\CategoryManagement` folder.
+You can find the compoments for category functionality in `src\components\Dashboard\Views\Examples\CategoryManagement` folder.
 
 ```
-<div>
-  <div
-    class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
-  >
+<div class="card-body row">
+  <div class="col-sm-6">
     <el-select
-      class="select-primary pagination-select"
+      class="select-default"
       v-model="pagination.perPage"
-      placeholder="Per page"
-    >
+      placeholder="Per page">
       <el-option
-        class="select-primary"
+        class="select-default"
         v-for="item in pagination.perPageOptions"
         :key="item"
         :label="item"
-        :value="item"
-      >
+        :value="item">
       </el-option>
     </el-select>
-
-    <div>
-      <form>
-        <base-input
-          v-model="query"
-          type="search"
-          prepend-icon="fas fa-search"
-          placeholder="Search..."
-          clearable
-        />
-      </form>
+  </div>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <fg-input class="input-sm"
+        placeholder="Search"
+        v-model="query"
+        addon-right-icon="nc-icon nc-zoom-split">
+      </fg-input>
     </div>
   </div>
-  <el-table
-    class="table-responsive align-items-center table-flush"
-    header-row-class-name="thead-light"
-    :data="categories"
-    @sort-change="sortChange"
-  >
-    <el-table-column label="Name" prop="name" sortable />
-    <el-table-column label="Description" prop="description" sortable />
-    <el-table-column label="Created At" prop="created_at" sortable />
-    <el-table-column align="center">
-      <div slot-scope="{ row }" class="table-actions">
-        <el-tooltip content="Edit" placement="top">
-          <a
-            type="text"
-            @click="editCategory(row)"
-            class="table-action"
-            data-toggle="tooltip"
-          >
-            <i class="fas fa-user-edit"></i>
-          </a>
-        </el-tooltip>
-
-        <el-tooltip content="Delete" placement="top">
-          <a
-            type="text"
-            @click="deleteCategory(row.id)"
-            class="table-action table-action-delete"
-            data-toggle="tooltip"
-          >
-            <i class="fas fa-trash"></i>
-          </a>
-        </el-tooltip>
-      </div>
-    </el-table-column>
-  </el-table>
+  <div class="col-sm-12 mt-2">
+    <el-table class="table-striped" :data="categories" border @sort-change="sortChange">
+      <el-table-column label="Name" prop="name" sortable="custom" />
+      <el-table-column label="Description" prop="description" sortable="custom" />
+      <el-table-column label="Created At" prop="created_at" sortable="custom"/>
+      <el-table-column fixed="right" class-name="td-actions" label="Actions">
+        <template slot-scope="props">
+          <p-button type="success" size="sm" icon @click="goToEdit(props.row.id)">
+            <i class="fa fa-edit"></i>
+          </p-button>
+          <p-button type="danger" size="sm" icon @click="deleteCategory(props.row.id)">
+            <i class="fa fa-times"></i>
+          </p-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <div class="col-sm-6 pagination-info">
+    <p class="category">Showing {{from + 1}} to {{to}} of {{total}} entries</p>
+  </div>
+  <div class="col-sm-6">
+    <p-pagination class="pull-right"
+      v-model="pagination.currentPage"
+      :per-page="pagination.perPage"
+      :total="total">
+    </p-pagination>
+  </div>
 </div>
 ```
 
@@ -877,269 +683,187 @@ On the add page, besides the Name and Description fields (which are present in m
 
 The store used for roles functionality is found in `src\store\modules\items-module.vue`
 
-You can find the compoments for items functionality in `src\views\Examples\ItemManagement` folder.
+You can find the compoments for items functionality in `src\components\Dashboard\Views\Examples\ItemManagement` folder.
 
 #### List Items
 
 ```
-<div>
-  <div
-    class="col-12 d-flex justify-content-center justify-content-sm-between flex-wrap"
-  >
+<div class="card-body row">
+  <div class="col-sm-6">
     <el-select
-      class="select-primary pagination-select"
+      class="select-default"
       v-model="pagination.perPage"
-      placeholder="Per page"
-    >
+      placeholder="Per page">
       <el-option
-        class="select-primary"
+        class="select-default"
         v-for="item in pagination.perPageOptions"
         :key="item"
         :label="item"
-        :value="item"
-      >
+        :value="item">
       </el-option>
     </el-select>
-    <div>
-      <base-input
+  </div>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <fg-input class="input-sm"
+        placeholder="Search"
         v-model="query"
-        type="search"
-        prepend-icon="fas fa-search"
-        placeholder="Search..."
-        clearable
-      />
+        addon-right-icon="nc-icon nc-zoom-split">
+      </fg-input>
     </div>
   </div>
-  <el-table
-    class="table-responsive align-items-center table-flush"
-    header-row-class-name="thead-light"
-    :data="items"
-    @sort-change="sortChange"
-  >
-    <div slot="empty" v-if="loading">
-      <img src="/img/loading.gif" style="height: 100px; width: 100px" />
-    </div>
-    <el-table-column
-      label="Name"
-      min-width="240px"
-      prop="name"
-      sortable="custom"
-    />
-    <el-table-column
-      label="Category"
-      min-width="140px"
-      prop="category.name"
-      sortable="custom"
-    />
-
-    <el-table-column label="Picture" min-width="150px">
-      <template v-slot="{ row }">
-        <img
-          v-if="row.image"
-          :src="row.image"
-          style="width: 100px; height: auto"
-          alt="avatar"
-        />
-      </template>
-    </el-table-column>
-
-    <el-table-column
-      label="Tags"
-      min-width="170px"
-      max-width="400px"
-      prop="tags.name"
-      sortable="custom"
-    >
-      <template slot-scope="{ row }">
-        <span
-          v-for="(tag, index) in row.tags"
-          :key="'tag' + index"
-          class="badge badge-default"
-          :style="{ backgroundColor: tag.color, margin: '.1rem' }"
-          >{{ tag.name }}</span
-        >
-      </template>
-    </el-table-column>
-    <el-table-column
-      label="Created At"
-      prop="created_at"
-      min-width="190px"
-      sortable="custom"
-    />
-    <el-table-column min-width="120px" align="center">
-      <div slot-scope="{ row }" class="table-actions">
-        <el-tooltip content="Edit" placement="top">
-          <a
-            type="text"
-            @click="editItem(row)"
-            class="table-action"
-            data-toggle="tooltip"
-            style="cursor: pointer"
+  <div class="col-sm-12 mt-2">
+    <el-table class="table-striped" :data="items" border @sort-change="sortChange">
+      <el-table-column label="Name" prop="name" sortable="custom" />
+      <el-table-column label="Category" prop="category.name" sortable="custom" />
+      <el-table-column label="Picture" min-width="150px">
+        <template v-slot="{ row }">
+          <img v-if="row.image"
+            :src="row.image"
+            style="width: 100px; height: auto"
+            alt="avatar"
+          />
+        </template>
+      </el-table-column>
+      <el-table-column label="Tags" prop="tags.name" sortable="custom">
+        <template slot-scope="{ row }">
+          <span
+            v-for="(tag, index) in row.tags"
+            :key="'tag' + index"
+            class="badge badge-default"
+            :style="{ backgroundColor: tag.color, margin: '.1rem' }"
+            >{{ tag.name }}</span
           >
-            <i class="fas fa-user-edit"></i>
-          </a>
-        </el-tooltip>
-        <el-tooltip content="Delete" placement="top">
-          <a
-            type="text"
-            @click="deleteItem(row.id)"
-            class="table-action table-action-delete"
-            data-toggle="tooltip"
-            style="cursor: pointer"
-          >
-            <i class="fas fa-trash"></i>
-          </a>
-        </el-tooltip>
-      </div>
-    </el-table-column>
-  </el-table>
+        </template>
+      </el-table-column>
+      <el-table-column label="Created At" prop="created_at" sortable="custom"/>
+      <el-table-column
+        fixed="right"
+        class-name="td-actions"
+        label="Actions">
+        <template slot-scope="props">
+          <p-button type="success" size="sm" icon @click="goToEdit(props.row.id)">
+            <i class="fa fa-edit"></i>
+          </p-button>
+          <p-button type="danger" size="sm" icon @click="deleteItem(props.row.id)">
+            <i class="fa fa-times"></i>
+          </p-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </div>
+  <div class="col-sm-6 pagination-info">
+    <p class="category">Showing {{from + 1}} to {{to}} of {{total}} entries</p>
+  </div>
+  <div class="col-sm-6">
+    <p-pagination class="pull-right"
+      v-model="pagination.currentPage"
+      :per-page="pagination.perPage"
+      :total="total">
+    </p-pagination>
+  </div>
 </div>
 ```
 
 #### Add/Edit Item
 
 ```
-<card>
-  <div slot="header" class="row align-items-center">
-    <div class="col-8">
-      <h3 class="mb-0">Edit Item</h3>
+<form @submit.prevent>
+  <div class="form-group">
+    <label class="form-control-label"> Picture </label>
+    <div
+      v-if="image"
+      class="profile-image card-img pb-4"
+      :style="{
+        'background-image': `url('${image}')`,
+      }"
+    ></div>
+    <div v-else class="profile-image">
+      <img src="/img/placeholder.jpg" />
     </div>
-    <div class="col-4 text-right">
-      <base-button
-        @click="goBack"
+    <div class="image-upload">
+      <button
+        v-if="image"
         type="button"
-        class="btn btn-sm btn-primary"
-        >Back to list</base-button
+        class="btn btn-fill btn-wd btn-danger"
+        @click="removeImage"
       >
+        <span>
+          <i class="fa fa-times" />
+          Remove
+        </span>
+      </button>
+      <button type="button" class="btn btn-info btn-fill btn-wd">
+        <label v-if="!image" for="imageInput" class="mb-0"
+          >Select image</label
+        >
+        <label v-else for="imageInput" class="mb-0">Change</label>
+        <input
+          id="imageInput"
+          ref="imageInput"
+          accept="image/*"
+          type="file"
+          style="display: none"
+          @input="onSelectFile"
+        />
+      </button>
     </div>
   </div>
-  <div class="card-body">
-    <form ref="profile_form" @submit.prevent="handleSubmit">
-      <div class="form-group">
-        <label class="form-control-label"> Picture </label>
-        <div v-if="file" class="profile-image card-img pb-4">
-          <img
-            :src="`${item.image}`"
-            class="profile-image argon-image"
-          />
-        </div>
-        <div v-else class="profile-image">
-          <img src="/img/placeholder.jpg" class="argon-image" />
-        </div>
-        <div class="image-upload">
-          <base-button
-            v-if="file"
-            type="button"
-            class="btn btn-sm btn-danger"
-            @click="removeImage"
-          >
-            <span>
-              <i class="fa fa-times" />
-              Remove
-            </span>
-          </base-button>
-          <base-button type="button" class="btn btn-sm btn-primary">
-            <label v-if="!file" for="imageInput" class="mb-0"
-              >Select image</label
-            >
-            <label v-else for="imageInput" class="mb-0">Change</label>
-            <input
-              id="imageInput"
-              ref="imageInput"
-              accept="image/*"
-              type="file"
-              style="display: none"
-              @change="onSelectFile"
-            />
-          </base-button>
-        </div>
-      </div>
-      <validation-error :errors="apiValidationErrors.attachment" />
-
-      <base-input
-        label="Name"
-        prepend-icon="fas fa-user"
-        v-model="item.name"
-      />
-      <validation-error :errors="apiValidationErrors.name" />
-
-      <base-input label="Description">
-        <html-editor v-model="item.description" name="editor" />
-      </base-input>
-      <validation-error :errors="apiValidationErrors.description" />
-
-      <base-input label="Category">
-        <el-select
-          name="category"
-          v-model="item.category.id"
-          prepend-icon="fas fa-user"
-        >
-          <el-option
-            v-for="single_category in all_categories"
-            :key="single_category.id"
-            :value="single_category.id"
-            :label="single_category.name"
-          >
-          </el-option>
-        </el-select>
-      </base-input>
-
-      <base-input label="Tags">
-        <el-select v-model="tags" multiple placeholder="Select...">
-          <el-option
-            v-for="single_tag in all_tags"
-            :key="single_tag.id"
-            :value="single_tag.id"
-            :label="single_tag.name"
-          >
-          </el-option>
-        </el-select>
-      </base-input>
-
-      <base-input label="Status">
-        <base-radio v-model="item.status" name="published" class="mb-3">
-          Published
-        </base-radio>
-        <base-radio v-model="item.status" name="draft" class="mb-3">
-          Draft
-        </base-radio>
-        <base-radio v-model="item.status" name="archive" class="mb-3">
-          Archive
-        </base-radio>
-      </base-input>
-
-      <base-input label="Show on homepage?">
-        <base-switch
-          class="mr-1"
-          v-model="item.is_on_homepage"
-        ></base-switch>
-      </base-input>
-
-      <base-input label="Date">
-        <flat-picker
-          slot-scope="{ focus, blur }"
-          @on-open="focus"
-          @on-close="blur"
-          :config="{ allowInput: true }"
-          class="form-control datepicker"
-          v-model="item.date_at"
-        >
-        </flat-picker>
-      </base-input>
-      <validation-error :errors="apiValidationErrors.date_at" />
-
-      <div class="my-4">
-        <base-button
-          type="button"
-          class="btn btn-sm btn-primary"
-          native-type="submit"
-        >
-          Update Item
-        </base-button>
-      </div>
-    </form>
+  <validation-error :errors="apiValidationErrors.attachment" />
+  <fg-input v-model="item.name" placeholder="Name" label="Name" ></fg-input>
+  <validation-error :errors="apiValidationErrors.name" />
+  <fg-input label="Description">
+    <ckeditor :editor="editor" v-model="item.description" :config="editorConfig"></ckeditor>
+  </fg-input>
+  <fg-input label="Category">
+    <el-select
+      class="select-default" placeholder="Category" v-model="item.category.id">
+      <el-option
+        class="select-default"
+        v-for="category in available_categories"
+        :key="category.id"
+        :label="category.name"
+        :value="category.id">
+      </el-option>
+    </el-select>
+    </fg-input>
+    <fg-input label="Tags">
+    <el-select
+      multiple class="select-default" placeholder="Tags" v-model="tags">
+      <el-option
+        class="select-default"
+        v-for="tag in available_tags"
+        :key="tag.id"
+        :label="tag.name"
+        :value="tag.id">
+      </el-option>
+    </el-select>
+    </fg-input>
+    <fg-input label="Status">
+      <p-radio v-model="item.status" label="published" class="mb-3">
+        Published
+      </p-radio>
+      <p-radio v-model="item.status" label="draft" class="mb-3">
+        Draft
+      </p-radio>
+      <p-radio v-model="item.status" label="archive" class="mb-3">
+        Archive
+      </p-radio>
+    </fg-input>
+    <fg-input label="Show on homepage?">
+      <p-switch v-model="item.is_on_homepage"></p-switch>
+    </fg-input>
+    <fg-input>
+    <el-date-picker v-model="item.date_at" type="date" placeholder="Select date and time">
+    </el-date-picker>
+    </fg-input>
+  <div class="text-center">
+    <button native-type="submit" class="btn btn-info btn-fill btn-wd">
+      Submit
+    </button>
   </div>
-</card>
+  <div class="clearfix"></div>
+</form>
 ```
 
 ## Table of Contents
@@ -1161,36 +885,32 @@ You can find the compoments for items functionality in `src\views\Examples\ItemM
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue.jpg" height="80" />](#)
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/json-api.png" height="75" />](#)
 
-| HTML                                                                                                                                                                                           | Laravel                                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Argon Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/137/thumb/opt_adp_thumbnail.jpg)](https://www.creative-tim.com/product/argon-dashboard-pro?ref=vadpl-readme) | [![Argon Dashboard Pro Laravel](https://s3.amazonaws.com/creativetim_bucket/products/146/thumb/opt_adp_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/argon-dashboard-pro-laravel?ref=vadpl-readme) |
-
-| Vue                                                                                                                                                                                                        | Vue & Laravel                                                                                                                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![Vue Argon Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/159/thumb/opt_adp_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-argon-dashboard-pro?ref=vadpl-readme) | [![Vue Argon Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/353/thumb/opt_adp_vue_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-argon-dashboard-pro-laravel?ref=vadpl-readme) |
+ HTML | VUE | LARAVEL & VUE|
+| --- | --- | --- |
+| [![Paper Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/84/original/opt_pd2p_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro](https://s3.amazonaws.com/creativetim_bucket/products/88/original/opt_pd2p_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/405/original/opt_pdp_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel?ref=vpdpl-readme) |
 
 ## Demo
 
 | Register                                                                                                                                                                                                                   | Login                                                                                                                                                                                                             | Dashboard                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Register](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/register.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/register?ref=vadpl-readme) | [![Login](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/login.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/login?ref=vadpl-readme) | [![Dashboard](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/dashboard.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/?ref=vadpl-readme) |
+| [![Register](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/register.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/register?ref=vpdpl-readme) | [![Login](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/login.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/login?ref=vpdpl-readme) | [![Dashboard](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/dashboard.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/?ref=vpdpl-readme) |
 
 | Profile Page                                                                                                                                                                                                                               | Users Page                                                                                                                                                                                                                                           | Tables Page                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Profile Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/profile.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/examples/user-profile?ref=vadpl-readme) | [![Users Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/users.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/examples/user-management/list-users?ref=vadpl-readme) | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel-pro/table.png)](https://vue-argon-dashboard-pro-laravel.creative-tim.com/tables/paginated?ref=vadpl-readme) |
+| [![Profile Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/profile.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/examples/user-profile?ref=vpdpl-readme) | [![Users Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/users.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/examples/user-management/list-users?ref=vpdpl-readme) | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/table.png)](https://vue-paper-dashboard-pro-laravel.creative-tim.com/table-list/extended) |
 
-[View More](https://vue-argon-dashboard-pro-laravel.creative-tim.com/?ref=vadpl-readme)
+[View More](https://vue-paper-dashboard-pro-laravel.creative-tim.com/?ref=vpdpl-readme)
 
 ## Documentation
 
-The documentation for the Vue Argon Dashboard PRO Laravel is hosted at our [website](https://demos.creative-tim.com/vue-argon-dashboard-pro-laravel/documentation?ref=vadpl-github-readme).
+The documentation for the Vue Paper Dashboard PRO Laravel is hosted at our [website](https://vue-paper-dashboard-pro-laravel.creative-tim.com/documentation/?ref=vpdpl-github-readme).
 
 ## File Structure
 
 Within the download you'll find the following directories and files:
 
 ```
-├───vue-argon-dashboard-pro
+├───vue-paper-dashboard
 │   App.vue
 │   main.js
 │   polyfills.js
@@ -1201,7 +921,6 @@ Within the download you'll find the following directories and files:
 │   │   │
 │   │   └───nucleo
 │   └───sass
-│       │   argon.scss
 │       │
 │       ├───core
 │       └───custom
@@ -1209,89 +928,151 @@ Within the download you'll find the following directories and files:
 │       index.js
 │
 ├───components
-│   │   Badge.vue
-│   │   BaseAlert.vue
-│   │   BaseButton.vue
-│   │   BaseDropdown.vue
-│   │   BaseHeader.vue
-│   │   BasePagination.vue
-│   │   BaseProgress.vue
-│   │   BaseSlider.vue
-│   │   BaseSwitch.vue
-│   │   BaseTable.vue
-│   │   ButtonCheckbox.vue
-│   │   ButtonRadioGroup.vue
-│   │   CloseButton.vue
-│   │   index.js
-│   │   LoadingPanel.vue
-│   │   Modal.vue
-│   │   NavbarToggleButton.vue
-│   │   ValidationError.vue
-│   │
-│   ├───Breadcrumb
-│   │       Breadcrumb.vue
-│   │       BreadcrumbItem.vue
-│   │       RouteBreadcrumb.vue
-│   │
-│   ├───Cards
-│   │       Card.vue
-│   │       StatsCard.vue
-│   │
-│   ├───Charts
-│   │       BarChart.js
-│   │       config.js
-│   │       DoughnutChart.js
-│   │       globalOptionsMixin.js
-│   │       LineChart.js
-│   │       optionHelpers.js
-│   │       PieChart.js
-│   │       roundedCornersExtension.js
-│   │
-│   ├───Collapse
-│   │       Collapse.vue
-│   │       CollapseItem.vue
-│   │
-│   ├───Feed
-│   │       Comment.vue
-│   │
-│   ├───Inputs
-│   │       BaseCheckbox.vue
-│   │       BaseInput.vue
-│   │       BaseRadio.vue
-│   │       DropzoneFileUpload.vue
-│   │       FileInput.vue
-│   │       HtmlEditor.vue
-│   │       IconCheckbox.vue
-│   │       TagsInput.vue
-│   │
-│   ├───Navbar
-│   │       BaseNav.vue
-│   │       NavbarToggleButton.vue
-│   │
-│   ├───NotificationPlugin
-│   │       index.js
-│   │       Notification.vue
-│   │       Notifications.vue
-│   │
-│   ├───SidebarPlugin
-│   │       index.js
-│   │       SideBar.vue
-│   │       SidebarItem.vue
-│   │
-│   ├───Tabs
-│   │       Tab.vue
-│   │       Tabs.vue
-│   │
-│   ├───Timeline
-│   │       TimeLine.vue
-│   │       TimeLineItem.vue
-│   │
-│   └───WorldMap
-│           AsyncWorldMap.vue
-│           WorldMap.vue
-│
-├───directives
-│       click-ouside.js
+|    ├── Dashboard
+|    │   ├── Layout
+|    │   │   ├── ContentFooter.vue
+|    │   │   ├── Content.vue
+|    │   │   ├── DashboardLayout.vue
+|    │   │   ├── LoadingMainPanel.vue
+|    │   │   └── TopNavbar.vue
+|    │   └── Views
+|    │       ├── Calendar
+|    │       │   ├── CalendarRoute.vue
+|    │       │   └── Calendar.vue
+|    │       ├── Charts.vue
+|    │       ├── Components
+|    │       │   ├── Buttons.vue
+|    │       │   ├── GridSystem.vue
+|    │       │   ├── Icons.vue
+|    │       │   ├── Notifications.vue
+|    │       │   ├── NotificationTemplate.vue
+|    │       │   ├── Panels.vue
+|    │       │   ├── SweetAlert.vue
+|    │       │   └── Typography.vue
+|    │       ├── Dashboard
+|    │       │   ├── Overview.vue
+|    │       │   ├── Widgets
+|    │       │   │   ├── TaskList.vue
+|    │       │   │   └── Task.vue
+|    │       │   └── Widgets.vue
+|    │       ├── Examples
+|    │       │   ├── CategoryManagement
+|    │       │   │   ├── AddCategoryPage.vue
+|    │       │   │   ├── EditCategoryPage.vue
+|    │       │   │   └── ListCategoryPage.vue
+|    │       │   ├── ItemManagement
+|    │       │   │   ├── AddItemPage.vue
+|    │       │   │   ├── EditItemPage.vue
+|    │       │   │   └── ListItemPage.vue
+|    │       │   ├── RoleManagement
+|    │       │   │   ├── AddRolePage.vue
+|    │       │   │   ├── EditRolePage.vue
+|    │       │   │   └── ListRolePage.vue
+|    │       │   ├── TagManagement
+|    │       │   │   ├── AddTagPage.vue
+|    │       │   │   ├── EditTagPage.vue
+|    │       │   │   └── ListTagPage.vue
+|    │       │   ├── UserManagement
+|    │       │   │   ├── AddUserPage.vue
+|    │       │   │   ├── EditUserPage.vue
+|    │       │   │   └── ListUserPage.vue
+|    │       │   ├── UserProfile
+|    │       │   │   ├── EditPasswordCard.vue
+|    │       │   │   └── EditProfileCard.vue
+|    │       │   └── UserProfile.vue
+|    │       ├── Forms
+|    │       │   ├── ExtendedForms.vue
+|    │       │   ├── RegularForms.vue
+|    │       │   ├── ValidationForms
+|    │       │   │   ├── LoginForm.vue
+|    │       │   │   ├── RegisterForm.vue
+|    │       │   │   └── TypeValidationForm.vue
+|    │       │   ├── ValidationForms.vue
+|    │       │   ├── Wizard
+|    │       │   │   ├── FirstStep.vue
+|    │       │   │   ├── SecondStep.vue
+|    │       │   │   └── ThirdStep.vue
+|    │       │   └── Wizard.vue
+|    │       ├── Maps
+|    │       │   ├── API_KEY.js
+|    │       │   ├── FullScreenMap.vue
+|    │       │   ├── GoogleMaps.vue
+|    │       │   ├── VectorMapsPage.vue
+|    │       │   ├── VectorMaps.vue
+|    │       │   └── WorldMap.vue
+|    │       ├── Pages
+|    │       │   ├── Layout
+|    │       │   │   ├── AppFooter.vue
+|    │       │   │   └── AppNavbar.vue
+|    │       │   ├── Lock.vue
+|    │       │   ├── Login.vue
+|    │       │   ├── Register.vue
+|    │       │   ├── TimeLinePage.vue
+|    │       │   ├── UserProfile
+|    │       │   │   ├── EditProfileForm.vue
+|    │       │   │   ├── MembersCard.vue
+|    │       │   │   └── UserCard.vue
+|    │       │   └── UserProfile.vue
+|    │       └── Tables
+|    │           ├── ExtendedTables.vue
+|    │           ├── PaginatedTables.vue
+|    │           ├── RegularTables.vue
+|    │           └── users.js
+|    ├── GeneralViews
+|    │   └── NotFoundPage.vue
+|    └── UIComponents
+|        ├── Badge.vue
+|        ├── Button.vue
+|        ├── Cards
+|        │   ├── Card.vue
+|        │   ├── ChartCard.vue
+|        │   ├── CircleChartCard.vue
+|        │   └── StatsCard.vue
+|        ├── Charts
+|        │   ├── BarChart.js
+|        │   ├── DoughnutChart.js
+|        │   ├── LineChart.js
+|        │   ├── mixins
+|        │   │   └── reactiveChart.js
+|        │   ├── PieChart.js
+|        │   ├── plugins
+|        │   │   └── plugin-chart-text.js
+|        │   └── utils.js
+|        ├── Collapse
+|        │   ├── CollapseItem.vue
+|        │   └── Collapse.vue
+|        ├── Dropdown.vue
+|        ├── index.js
+|        ├── InfoSection.vue
+|        ├── Inputs
+|        │   ├── Checkbox.vue
+|        │   ├── formGroupInput.vue
+|        │   ├── IconCheckbox.vue
+|        │   └── Radio.vue
+|        ├── Modal.vue
+|        ├── Navbar
+|        │   ├── NavbarToggleButton.vue
+|        │   └── Navbar.vue
+|        ├── Pagination.vue
+|        ├── Progress.vue
+|        ├── SidebarPlugin
+|        │   ├── index.js
+|        │   ├── SidebarItem.vue
+|        │   ├── SideBar.vue
+|        │   └── UserMenu.vue
+|        ├── Switch.vue
+|        ├── Tabs
+|        │   ├── PillsLayout.vue
+|        │   ├── TabsLayout.vue
+|        │   ├── Tabs.vue
+|        │   └── Tab.vue
+|        ├── TimeLine
+|        │   ├── TimeLineItem.vue
+|        │   └── TimeLine.vue
+|        ├── ValidationError.vue
+|        └── Wizard
+|            ├── WizardTab.vue
+|            └── Wizard.vue
 │
 ├───middleware
 │       admin.js
@@ -1335,144 +1116,6 @@ Within the download you'll find the following directories and files:
 │
 ├───util
 │       throttle.js
-│
-└───views
-    │   Charts.vue
-    │   Widgets.vue
-    │
-    ├───Calendar
-    │       Calendar.vue
-    │
-    ├───Components
-    │       Buttons.vue
-    │       Cards.vue
-    │       GridSystem.vue
-    │       Icons.vue
-    │       Notifications.vue
-    │       Typography.vue
-    │
-    ├───Dashboard
-    │       ActivityFeed.vue
-    │       AlternativeDashboard.vue
-    │       Dashboard.vue
-    │       LightTable.vue
-    │       PageVisitsTable.vue
-    │       ProgressTrackList.vue
-    │       SocialTrafficTable.vue
-    │       TaskList.vue
-    │       UserList.vue
-    │
-    ├───Examples
-    │   │   UserProfile.vue
-    │   │
-    │   ├───CategoryManagement
-    │   │       AddCategoryPage.vue
-    │   │       EditCategoryPage.vue
-    │   │       ListCategoryPage.vue
-    │   │
-    │   ├───ItemManagement
-    │   │       AddItemPage.vue
-    │   │       EditItemPage.vue
-    │   │       ListItemPage.vue
-    │   │
-    │   ├───RoleManagement
-    │   │       AddRolePage.vue
-    │   │       EditRolePage.vue
-    │   │       ListRolePage.vue
-    │   │
-    │   ├───TagManagement
-    │   │       AddTagPage.vue
-    │   │       EditTagPage.vue
-    │   │       ListTagPage.vue
-    │   │
-    │   ├───UserManagement
-    │   │       AddUserPage.vue
-    │   │       EditUserPage.vue
-    │   │       ListUserPage.vue
-    │   │
-    │   └───UserProfile
-    │           UserEditCard.vue
-    │           UserPasswordCard.vue
-    │
-    ├───Forms
-    │   │   FormComponents.vue
-    │   │   FormElements.vue
-    │   │   FormValidation.vue
-    │   │
-    │   └───FormValidation
-    │           BrowserDefaultsValidation.vue
-    │           CustomStylesValidation.vue
-    │           ServerSideValidation.vue
-    │
-    ├───GeneralViews
-    │       NotFoundPage.vue
-    │
-    ├───Layout
-    │       Content.vue
-    │       ContentFooter.vue
-    │       DashboardLayout.vue
-    │       DashboardNavbar.vue
-    │
-    ├───Maps
-    │       API_KEY.js
-    │       GoogleMaps.vue
-    │       VectorMaps.vue
-    │
-    ├───Pages
-    │   │   AuthLayout.vue
-    │   │   Home.vue
-    │   │   Lock.vue
-    │   │   Login.vue
-    │   │   Pricing.vue
-    │   │   Register.vue
-    │   │   TimeLinePage.vue
-    │   │   UserProfile.vue
-    │   │
-    │   └───UserProfile
-    │           EditProfileForm.vue
-    │           UserCard.vue
-    │
-    ├───Password
-    │       Email.vue
-    │       Reset.vue
-    │
-    ├───Starter
-    │       SampleFooter.vue
-    │       SampleLayout.vue
-    │       SampleNavbar.vue
-    │       SamplePage.vue
-    │
-    ├───Tables
-    │   │   PaginatedTables.vue
-    │   │   projects.js
-    │   │   RegularTables.vue
-    │   │   SortableTables.vue
-    │   │   users.js
-    │   │   users2.js
-    │   │
-    │   ├───PaginatedTables
-    │   │       clientPaginationMixin.js
-    │   │
-    │   └───RegularTables
-    │           CheckboxColoredTable.vue
-    │           CheckboxTable.vue
-    │           DarkTable.vue
-    │           InlineActionsTable.vue
-    │           LightTable.vue
-    │           StripedTable.vue
-    │           TranslucentTable.vue
-    │
-    └───Widgets
-            CalendarWidget.vue
-            CreditCard.vue
-            MembersCard.vue
-            PaypalCard.vue
-            ProgressTrackList.vue
-            StatsCards.vue
-            TaskList.vue
-            TimelineCard.vue
-            VectorMapCard.vue
-            VisaCard.vue
 ```
 
 ## Browser Support
@@ -1483,81 +1126,72 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- Demo: <https://vue-argon-dashboard-pro-laravel.creative-tim.com/?ref=vadpl-readme>
-- Download Page: <https://www.creative-tim.com/product/vue-argon-dashboard-pro-laravel?ref=vadpl-readme>
-- Documentation: <https://vue-argon-dashboard-pro-laravel.creative-tim.com/documentation?ref=vadpl-readme>
+- Demo: <https://vue-paper-dashboard-pro-laravel.creative-tim.com/?ref=vpdpl-readme>
+- Download Page: <https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel?ref=vpdpl-readme>
+- Documentation: <https://vue-paper-dashboard-pro-laravel.creative-tim.com/documentation?ref=vpdpl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-argon-dashboard-pro-laravel/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-paper-dashboard-pro-laravel/issues)
 - **Dashboards:**
 
-| HTML                                                                                                                                                                                           | Laravel                                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Argon Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/137/thumb/opt_adp_thumbnail.jpg)](https://www.creative-tim.com/product/argon-dashboard-pro?ref=vadpl-readme) | [![Argon Dashboard Pro Laravel](https://s3.amazonaws.com/creativetim_bucket/products/146/thumb/opt_adp_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/argon-dashboard-pro-laravel?ref=vadpl-readme) |
-
-| Vue                                                                                                                                                                                                        | Vue & Laravel                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Vue Argon Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/159/thumb/opt_adp_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-argon-dashboard-pro?ref=vadpl-readme) | [![Vue Argon Dashboard Pro Laravel](https://s3.amazonaws.com/creativetim_bucket/products/353/thumb/opt_adp_vue_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-argon-dashboard-pro-laravel?ref=vadpl-readme) |
+ HTML | VUE | LARAVEL & VUE|
+| --- | --- | --- |
+| [![Paper Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/84/original/opt_pd2p_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro](https://s3.amazonaws.com/creativetim_bucket/products/88/original/opt_pd2p_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/405/original/opt_pdp_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel?ref=vpdpl-readme) |
 
 ## Change log
 
 Please see the [changelog](CHANGELOG.md) for more information on what has changed recently.
 
-## Credits
-
-- [Creative Tim](https://creative-tim.com/?ref=vadpl-readme)
-- [UPDIVISION](https://updivision.com)
-
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Argon Kit. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Paper Kit. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Argon Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=vadpl-readme).
+1. Make sure that you are using the latest version of the Paper Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=vpdpl-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=vadpl-readme)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=vpdpl-readme)
 
-- Licensed under MIT (https://github.com/creativetimofficial/vue-argon-dashboard/blob/master/LICENSE.md)
+- Creative Tim license (https://www.creative-tim.com/license)
 
 ## Useful Links
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=vadpl-readme)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=vadpl-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=vadpl-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=vadpl-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=vadpl-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=vadpl-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=vadpl-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=vadpl-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=vadpl-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=vadpl-readme)
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=vpdpl-readme)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=vpdpl-readme) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/?ref=vpdpl-readme)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=vpdpl-readme) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=vpdpl-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=vpdpl-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=vpdpl-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=vpdpl-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=vpdpl-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=vpdpl-readme)
 
 ## Social Media
 
 ### Creative Tim:
 
-Twitter: <https://twitter.com/CreativeTim?ref=vadpl-readme>
+Twitter: <https://twitter.com/CreativeTim?ref=vpdpl-readme>
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=vadpl-readme>
+Facebook: <https://www.facebook.com/CreativeTim?ref=vpdpl-readme>
 
-Dribbble: <https://dribbble.com/creativetim?ref=vadpl-readme>
+Dribbble: <https://dribbble.com/creativetim?ref=vpdpl-readme>
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=vadpl-readme>
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=vpdpl-readme>
 
 ### Updivision:
 
-Twitter: <https://twitter.com/updivision?ref=vadpl-readme>
+Twitter: <https://twitter.com/updivision?ref=vpdpl-readme>
 
-Facebook: <https://www.facebook.com/updivision?ref=vadpl-readme>
+Facebook: <https://www.facebook.com/updivision?ref=vpdpl-readme>
 
-Linkedin: <https://www.linkedin.com/company/updivision?ref=vadpl-readme>
+Linkedin: <https://www.linkedin.com/company/updivision?ref=vpdpl-readme>
 
-Updivision Blog: <https://updivision.com/blog/?ref=vadpl-readme>
+Updivision Blog: <https://updivision.com/blog/?ref=vpdpl-readme>
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=vadpl-readme)
+- [Creative Tim](https://creative-tim.com/?ref=vpdpl-readme)
 - [UPDIVISION](https://updivision.com)
