@@ -1138,9 +1138,13 @@ At present, we officially aim to support the last two versions of the following 
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-paper-dashboard-pro-laravel/issues)
 - **Dashboards:**
 
- HTML | VUE | LARAVEL & VUE|
-| --- | --- | --- |
-| [![Paper Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/84/original/opt_pd2p_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro](https://s3.amazonaws.com/creativetim_bucket/products/88/original/opt_pd2p_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/405/original/opt_pdp_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel?ref=vpdpl-readme) |
+ HTML | LARAVEL |
+| --- | --- |
+| [![Paper Dashboard Pro HTML](https://s3.amazonaws.com/creativetim_bucket/products/84/original/opt_pd2p_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-2-pro?ref=vpdpl-readme) | [![Paper Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/208/original/opt_pdp_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-pro-laravel?ref=vpdpl-readme) |
+
+| VUE | LARAVEL & VUE|
+| --- | --- |
+| [![Vue Paper Dashboard Pro](https://s3.amazonaws.com/creativetim_bucket/products/88/original/opt_pd2p_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-2-pro?ref=vpdpl-readme) | [![Vue Paper Dashboard Pro Laravel ](https://s3.amazonaws.com/creativetim_bucket/products/405/original/opt_pdp_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard-pro-laravel?ref=vpdpl-readme) |
 
 ## Change log
 
