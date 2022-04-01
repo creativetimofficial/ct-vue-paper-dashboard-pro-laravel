@@ -6,7 +6,7 @@ _Frontend version_: Paper Dashboard v2.1.1. More info at https://www.creative-ti
 
 _Vue version_: Vue Paper Dashboard v2.3.0. More info at https://www.creative-tim.com/product/vue-paper-dashboard-2-pro
 
-![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard-laravel-pro/intro.gif)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/405/original/opt_pdp_vuelaravel_thumbnail.jpg)
 
 What if you could go from frontend to fullstack in an instant when building your app? We partnered with [UPDIVISION](https://updivision.com) to bring you Vue Paper Dashboard PRO, the ultimate fullstack resource. Vue Paper Dashboard PRO comes not only with a huge number of UI components and a Vue Paper frontend, but also with an API-powered Laravel backend.
 
